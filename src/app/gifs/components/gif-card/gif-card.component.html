@@ -1,0 +1,22 @@
+<div class="row">
+<!--col-md-4 significa que en monitores medianos caben 3 imagenes, 4*3 = 12 si pongo 6 caben 2 -->
+
+        
+        <div (click)="decirHola()"  class="card text-center bg-dark">
+            
+            <shared-lazy-image style="margin-top: 5px" [url] = "gif.images.downsized_medium.url" [alt] = "gif.title || 'No nombre'"></shared-lazy-image>
+            <!--<img  
+                src = "{{gif.images.downsized_medium.url}}" 
+                [alt]="gif.title"
+                class = "card-img-top"
+            >-->
+            <!-- todo: crear imagen-->
+            <div style="color: lightblue">
+                <p class="animate__animated animate__fadeIn" style="animation-delay: 0.3s" >
+                    {{gif.title || 'no title'}}
+                </p>
+            </div>
+        
+</div>        
+    
+

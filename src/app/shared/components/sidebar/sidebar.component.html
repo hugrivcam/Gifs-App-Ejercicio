@@ -1,0 +1,13 @@
+<div class="bg-dark border-right p-3" id = "sidebar">
+    <h3 class = "text-light">Gifs APP</h3>
+    <hr class = "p-1">
+    <div class="list-group list-reset">
+    <div *ngIf="tagList.length"><strong>Historico ({{tagList.length}})</strong></div>
+        <button 
+            *ngFor ="let miTag of tagList" 
+            class = "list-group list-group-item-action text-dark"
+            (click) = "enviarTag(miTag)">
+            {{miTag | titlecase}}
+        </button>
+    </div>
+</div>
